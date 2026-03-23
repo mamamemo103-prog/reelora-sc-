@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Games — Reelora</title>
+  <meta name="description" content="Browse all free online games on Reelora. Arcade, puzzle, action, and quick-play titles in your browser.">
+  <link rel="canonical" href="https://reelora.netlify.app/games.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Plus+Jakarta+Sans:ital,wght@0,500;0,600;0,700;0,800&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/favi.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reelora.css">
+</head>
+<body class="reelora">
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Reelora home">
+        <span class="brand__text">Reelora</span>
+      </a>
+      <nav class="nav-desktop" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="index.html#categories">Categories</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn--primary" href="#game-collection">Play Now</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer" id="navToggle"><span></span></button>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+  <div class="nav-drawer" id="navDrawer" role="dialog" aria-label="Menu">
+    <a href="index.html">Home</a>
+    <a href="games.html">Games</a>
+    <a href="index.html#categories">Categories</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn btn--primary" href="#game-collection" style="margin-top: 12px;">Play Now</a>
+  </div>
+
+  <main>
+    <section class="rl-hero" aria-label="Game library">
+      <div class="rl-hero__bg" aria-hidden="true"></div>
+      <div class="wrap rl-hero__grid">
+        <div>
+          <p class="rl-hero__eyebrow"><span class="rl-hero__eyebrow-dot" aria-hidden="true"></span> Full library</p>
+          <h1 class="rl-hero__title">Your <span>game collection</span></h1>
+          <p class="rl-hero__desc">Every title runs in your browser—pick a card, play in a new tab, and come back anytime. Casual gameplay for fun and skill practice.</p>
+          <div class="rl-hero__actions">
+            <a class="btn btn--primary btn--lg" href="#game-collection">Browse games</a>
+            <a class="btn btn--secondary btn--lg" href="index.html">Back to home</a>
+          </div>
+          <ul class="rl-hero__chips">
+            <li>6 games</li>
+            <li>Instant open</li>
+            <li>Free to play</li>
+          </ul>
+        </div>
+        <div class="rl-hero__visual">
+          <div class="rl-hero__visual-inner">
+            <img src="./img/feature.webp" alt="" width="640" height="400" loading="eager" decoding="async">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="games-filters" aria-label="Browse modes">
+      <div class="wrap games-filters__inner">
+        <span class="games-filters__label">Filter</span>
+        <span class="games-filters__pill games-filters__pill--active">All</span>
+        <span class="games-filters__pill">Arcade</span>
+        <span class="games-filters__pill">Puzzle</span>
+        <span class="games-filters__pill">Action</span>
+      </div>
+    </section>
+
+    <section class="section section--surface games-page-section" id="game-collection" aria-label="All games">
+      <div class="wrap">
+        <header class="rl-section__head" style="margin-bottom: 32px;">
+          <p class="rl-section__kicker">Library</p>
+          <h2 class="rl-section__title">All games</h2>
+          <p class="rl-section__sub">Premium-style cards with thumbnails, tags, and a clear play action—same games, refreshed presentation.</p>
+        </header>
+        <div class="catalog-grid catalog-grid--sc">
+          <a class="catalog-card" href="games/javascript-tetris-main/index.html" target="_blank" rel="noopener">
+            <span class="catalog-card__visual"><img src="img/tetris.webp" alt="" loading="lazy" decoding="async"></span>
+            <span class="catalog-card__badge catalog-card__badge--popular">Popular</span>
+            <div class="catalog-card__body">
+              <div class="catalog-card__main">
+                <span class="catalog-card__title">Neon Stacks</span>
+                <span class="catalog-card__tag">Puzzle</span>
+                <span class="catalog-card__desc">Stack shapes and clear lines—focused puzzle play.</span>
+              </div>
+              <div class="catalog-card__foot">
+                <span class="catalog-card__hint">Browser · New tab</span>
+                <span class="catalog-card__btn"><span class="catalog-card__btn-text">Play</span></span>
+              </div>
+            </div>
+          </a>
+          <a class="catalog-card" href="games/Whack-a-Mole-master/index.html" target="_blank" rel="noopener">
+            <span class="catalog-card__visual"><img src="img/whack_a_mole.webp" alt="" loading="lazy" decoding="async"></span>
+            <span class="catalog-card__badge catalog-card__badge--new">New</span>
+            <div class="catalog-card__body">
+              <div class="catalog-card__main">
+                <span class="catalog-card__title">Tap Rush</span>
+                <span class="catalog-card__tag">Reflex</span>
+                <span class="catalog-card__desc">Fast taps and timing—short, energetic sessions.</span>
+              </div>
+              <div class="catalog-card__foot">
+                <span class="catalog-card__hint">Browser · New tab</span>
+                <span class="catalog-card__btn"><span class="catalog-card__btn-text">Play</span></span>
+              </div>
+            </div>
+          </a>
+          <a class="catalog-card" href="games/pong-game-main/index.html" target="_blank" rel="noopener">
+            <span class="catalog-card__visual"><img src="img/pong.webp" alt="" loading="lazy" decoding="async"></span>
+            <span class="catalog-card__badge">Classic</span>
+            <div class="catalog-card__body">
+              <div class="catalog-card__main">
+                <span class="catalog-card__title">Rally Pulse</span>
+                <span class="catalog-card__tag">Arcade</span>
+                <span class="catalog-card__desc">Paddle and ball—easy to pick up anytime.</span>
+              </div>
+              <div class="catalog-card__foot">
+                <span class="catalog-card__hint">Browser · New tab</span>
+                <span class="catalog-card__btn"><span class="catalog-card__btn-text">Play</span></span>
+              </div>
+            </div>
+          </a>
+          <a class="catalog-card" href="games/SpaceInvader-master/index.html" target="_blank" rel="noopener">
+            <span class="catalog-card__visual"><img src="img/space_invadors.webp" alt="" loading="lazy" decoding="async"></span>
+            <span class="catalog-card__badge catalog-card__badge--hot">Hot</span>
+            <div class="catalog-card__body">
+              <div class="catalog-card__main">
+                <span class="catalog-card__title">Star Blitz</span>
+                <span class="catalog-card__tag">Action</span>
+                <span class="catalog-card__desc">Wave-style arcade action in your browser.</span>
+              </div>
+              <div class="catalog-card__foot">
+                <span class="catalog-card__hint">Browser · New tab</span>
+                <span class="catalog-card__btn"><span class="catalog-card__btn-text">Play</span></span>
+              </div>
+            </div>
+          </a>
+          <a class="catalog-card" href="games/css-sweeper-master/index.html" target="_blank" rel="noopener">
+            <span class="catalog-card__visual"><img src="img/miresweeper.webp" alt="" loading="lazy" decoding="async"></span>
+            <span class="catalog-card__badge">Logic</span>
+            <div class="catalog-card__body">
+              <div class="catalog-card__main">
+                <span class="catalog-card__title">Grid Clarity</span>
+                <span class="catalog-card__tag">Puzzle</span>
+                <span class="catalog-card__desc">Read clues and clear the grid with care.</span>
+              </div>
+              <div class="catalog-card__foot">
+                <span class="catalog-card__hint">Browser · New tab</span>
+                <span class="catalog-card__btn"><span class="catalog-card__btn-text">Play</span></span>
+              </div>
+            </div>
+          </a>
+          <a class="catalog-card" href="games/Breakout_Game-master/index.html" target="_blank" rel="noopener">
+            <span class="catalog-card__visual"><img src="img/breakout.webp" alt="" loading="lazy" decoding="async"></span>
+            <span class="catalog-card__badge">Arcade</span>
+            <div class="catalog-card__body">
+              <div class="catalog-card__main">
+                <span class="catalog-card__title">Brick Wave</span>
+                <span class="catalog-card__tag">Breakout</span>
+                <span class="catalog-card__desc">Angle shots and break bricks—satisfying arcade flow.</span>
+              </div>
+              <div class="catalog-card__foot">
+                <span class="catalog-card__hint">Browser · New tab</span>
+                <span class="catalog-card__btn"><span class="catalog-card__btn-text">Play</span></span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="games-stats" aria-label="Trust line">
+      <div class="wrap">
+        <div class="games-stats__row">
+          <span class="games-stats__item">Free to play</span>
+          <span class="games-stats__dot" aria-hidden="true">·</span>
+          <span class="games-stats__item">Browser-based</span>
+          <span class="games-stats__dot" aria-hidden="true">·</span>
+          <span class="games-stats__item">Entertainment only</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="support-strip" aria-label="Help">
+      <div class="wrap support-strip__inner">
+        <p class="support-strip__text">Questions? Visit <a href="faq.html">FAQ</a> or <a href="contact.html">Contact</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="Footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="footer-col__title">Reelora</h3>
+          <p>Free online games for casual play. Entertainment for adults 18+.</p>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col__title">Legal</h3>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="responsible-play.html">Responsible Play</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col__title">Support</h3>
+          <ul>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="technical-notes.html">Technical Notes</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Reelora. Reelora is a free-to-play online games platform for entertainment purposes only. No real money is involved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cookiebar" id="cookiebar" aria-live="polite">
+    <p>We use cookies for essential features and, where you allow, analytics. See our Privacy Policy.</p>
+    <div class="cookiebar__btns">
+      <button type="button" class="btn btn--secondary" id="cookieReject">Reject</button>
+      <button type="button" class="btn btn--primary" id="cookieAccept">Accept</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>if (document.getElementById("year")) document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
