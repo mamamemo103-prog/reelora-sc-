@@ -1,0 +1,2 @@
+User-agent: *
+Allow: / Sitemap: https://reelora.netlify.app/games/javascript-tetris-main/sitemap.xml
