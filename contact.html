@@ -1,8 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>Contact — Reelora</title> <meta name="description" content="Contact Reelora (reelora.netlify.app): questions about the site, games, or policies. Casual games for adults 18+."> <link rel="canonical" href="https://reelora.netlify.app/contact.html"> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Plus+Jakarta+Sans:ital,wght@0,500;0,600;0,700;0,800&display=swap" rel="stylesheet"> <link rel="icon" href="img/favi.ico" type="image/x-icon"> <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="reelora.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="assets/favi.ico">
+  <meta name="description" content="Contact Reelora — March 2026.">
+  <title>Contact — Reelora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@800&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="reelora"> <header class="site-header"> <div class="wrap"> <a class="brand" href="index.html" aria-label="Reelora home"> <span class="brand__text">Reelora</span> </a> <nav class="nav-desktop" aria-label="Primary"> <a href="games.html">Games</a> <a href="about.html">About</a> <a href="responsible-play.html">Wellness</a> <a href="contact.html">Contact</a> <a class="btn btn--primary" href="games.html">Play Now</a> </nav> <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer" id="navToggle"><span></span></button> </div> </header> <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div> <div class="nav-drawer" id="navDrawer" role="dialog" aria-label="Menu"> <a href="games.html">Games</a> <a href="about.html">About</a> <a href="responsible-play.html">Wellness</a> <a href="contact.html">Contact</a> <a class="btn btn--primary" href="games.html" style="margin-top: 12px;">Play Now</a> </div> <main class="section section--alt"> <div class="wrap" style="max-width: 720px;"> <h1 class="page-title">Contact</h1> <p class="section__sub" style="margin-bottom: 24px;">Send a message about the website, a game, or our policies. We try to answer within a few business days.</p> <div class="contact-grid"> <div> <form id="contactForm" novalidate> <div class="form-group"> <label for="name">Your name</label> <input type="text" id="name" name="name" placeholder="Your name" required> </div> <div class="form-group"> <label for="email">Your email</label> <input type="email" id="email" name="email" placeholder="you@example.com" required> </div> <div class="form-group"> <label for="subject">Subject</label> <input type="text" id="subject" name="subject" placeholder="How can we help?" required> </div> <div class="form-group"> <label for="message">Message</label> <textarea id="message" name="message" placeholder="Write your message…" required></textarea> </div> <button type="submit" class="btn btn--primary btn--lg">Submit</button> <p id="successMsg" style="display:none; margin-top: 12px; font-size: 0.9375rem; color: var(--accent);">Submitted successfully.</p> <p style="margin-top: 12px; font-size: 0.8125rem; color: var(--text-muted);">Leisure site only · Adults 18+</p> </form> </div> <aside class="contact-side" aria-label="Support"> <h3>Email</h3> <p>You may also write to us by email.</p> <a href="mailto:support@reelora.netlify.app">support@reelora.netlify.app</a> <p>Please mention your device type and, if it helps, which game or page you mean.</p> </aside> </div> </div> </main> <footer class="site-footer" aria-label="Footer"> <div class="wrap"> <div class="footer-grid"> <div class="footer-col"> <h3 class="footer-col__title">About Us</h3> <p>Casual browser games. No registration. Entertainment only. Adults 18+.</p> </div> <div class="footer-col"> <h3 class="footer-col__title">Policy and Legal</h3> <ul> <li><a href="privacy.html">Privacy Policy</a></li> <li><a href="terms.html">Terms of Use</a></li> <li><a href="responsible-play.html">Wellness</a></li> </ul> </div> <div class="footer-col"> <h3 class="footer-col__title">Support and Information</h3> <ul> <li><a href="faq.html">FAQ</a></li> <li><a href="contact.html">Contact</a></li> <li><a href="technical-notes.html">Technical Notes</a></li> </ul> </div> </div> <div class="footer-bottom"> <p>© <span id="year"></span> Reelora. This is a free-to-play games platform. No real money is involved. All games are for entertainment purposes only.</p> </div> </div> </footer> <script src="script.js"></script> <script> if (document.getElementById("year")) document.getElementById("year").textContent = new Date().getFullYear(); var form = document.getElementById("contactForm"); var msg = document.getElementById("successMsg"); if (form && msg) { form.addEventListener("submit", function(e) { e.preventDefault(); if (!form.checkValidity()) { form.reportValidity(); return; } msg.style.display = "block"; form.reset(); setTimeout(function() { msg.style.display = "none"; }, 4000); }); } </script>
+<body class="rl-body">
+  <header class="rl-head">
+    <div class="rl-wrap rl-head__row">
+      <a href="index.html" class="rl-mark"><span class="rl-mark__reel">RL</span>Reelora</a>
+      <button type="button" class="rl-burger" aria-label="Open menu" aria-expanded="false" aria-controls="rl-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="rl-menu" id="rl-menu">
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="is-here">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="rl-page">
+    <div class="rl-wrap">
+      <h1>Contact</h1>
+      <p class="rl-meta">March 2026 · General questions about Reelora</p>
+
+      <p>Connect this form to your mail service when you deploy. For privacy topics, include <strong>Privacy</strong> in the subject.</p>
+
+      <form class="rl-form" action="#" method="post" onsubmit="return false;">
+        <div>
+          <label for="s">Subject</label>
+          <input type="text" id="s" name="subject" autocomplete="off" placeholder="How can we help?">
+        </div>
+        <div>
+          <label for="m">Message</label>
+          <textarea id="m" name="body" placeholder="Your message"></textarea>
+        </div>
+        <a href="mailto:hello@reelora.com?subject=Reelora%20inquiry" class="rl-btn rl-btn--fill" style="text-decoration:none;width:fit-content">Email hello@reelora.com</a>
+      </form>
+
+      <p style="margin-top:1.25rem"><a href="index.html">← Home</a></p>
+    </div>
+  </main>
+
+  <footer class="rl-foot">
+    <div class="rl-wrap">
+      <p class="rl-foot__legal">Entertainment only. Virtual coins · Free to play.</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
 </body>
 </html>

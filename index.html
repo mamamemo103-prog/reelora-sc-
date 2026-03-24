@@ -1,287 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Reelora — Free Online Games &amp; Casual Play</title>
-  <meta name="description" content="Discover fun online games in one playful place. Play arcade, puzzle, and action games free in your browser on Reelora.">
-  <link rel="canonical" href="https://reelora.netlify.app/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="assets/favi.ico">
+  <meta name="description" content="Reelora — free social-style games. Virtual coins only. March 2026.">
+  <title>Reelora — Free Social Games</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Plus+Jakarta+Sans:ital,wght@0,500;0,600;0,700;0,800&display=swap" rel="stylesheet">
-  <link rel="icon" href="img/favi.ico" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="reelora.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="reelora">
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="index.html" aria-label="Reelora home">
-        <span class="brand__text">Reelora</span>
+<body class="rl-body">
+  <header class="rl-head">
+    <div class="rl-wrap rl-head__row">
+      <a href="index.html" class="rl-mark" aria-label="Reelora home">
+        <span class="rl-mark__reel">RL</span>
+        Reelora
       </a>
-      <nav class="nav-desktop" aria-label="Primary">
-        <a href="index.html">Home</a>
+      <button type="button" class="rl-burger" aria-label="Open menu" aria-expanded="false" aria-controls="rl-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="rl-menu" id="rl-menu">
+        <a href="index.html" class="is-here">Home</a>
         <a href="games.html">Games</a>
-        <a href="#categories">Categories</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-        <a class="btn btn--primary" href="games.html">Play Now</a>
       </nav>
-      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer" id="navToggle"><span></span></button>
     </div>
   </header>
-  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
-  <div class="nav-drawer" id="navDrawer" role="dialog" aria-label="Menu">
-    <a href="index.html">Home</a>
-    <a href="games.html">Games</a>
-    <a href="#categories">Categories</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a class="btn btn--primary" href="games.html" style="margin-top: 12px;">Play Now</a>
-  </div>
 
   <main>
     <section class="rl-hero" aria-label="Welcome">
-      <div class="rl-hero__bg" aria-hidden="true"></div>
-      <div class="wrap rl-hero__grid">
-        <div>
-          <p class="rl-hero__eyebrow"><span class="rl-hero__eyebrow-dot" aria-hidden="true"></span> Free online games</p>
-          <h1 class="rl-hero__title">Discover fun online games in <span>one playful place</span></h1>
-          <p class="rl-hero__desc">Jump into casual games, quick challenges, and skill-based fun—right in your browser. Explore popular titles, try something new, and enjoy simple gameplay made for everyday breaks.</p>
-          <div class="rl-hero__actions">
-            <a class="btn btn--primary btn--lg" href="games.html">Play Now</a>
-            <a class="btn btn--secondary btn--lg" href="#featured">Featured games</a>
+      <div class="rl-hero__wash" aria-hidden="true"></div>
+      <div class="rl-hero__dots" aria-hidden="true"></div>
+
+      <div class="rl-wrap rl-hero__grid">
+        <div class="rl-hero__copy">
+          <div class="rl-kicker">March 2026 · Virtual coins</div>
+          <h1>
+            <span class="rl-line1">Reel</span><span class="rl-line1 rl-brand-ora">ora</span>
+            <span class="rl-hero__sub">Free to play · Social-style lounge</span>
+          </h1>
+          <p class="rl-hero__lead">Layered glass, soft neon, and quick sessions—browse a curated orbit of titles with <strong>virtual coins only</strong>. No purchase required to explore the hub.</p>
+          <div class="rl-hero__row">
+            <a href="games.html" class="rl-btn rl-btn--fill rl-btn--full-sm">Open collection</a>
+            <a href="#mosaic" class="rl-btn rl-btn--ghost rl-btn--full-sm">See featured</a>
           </div>
-          <ul class="rl-hero__chips" aria-label="Highlights">
-            <li>Play instantly</li>
-            <li>No download</li>
-            <li>Entertainment only</li>
+          <p class="rl-hero__fine">Entertainment only. In-game credits stay inside each experience.</p>
+        </div>
+
+        <div class="rl-hero__viz" aria-hidden="true">
+          <div class="rl-hero__blob"></div>
+          <div class="rl-hero__frame">
+            <img src="./assets/game_card_slot.webp" alt="" width="400" height="500" loading="eager" decoding="async">
+          </div>
+          <span class="rl-hero__tag rl-hero__tag--a">Slots</span>
+          <span class="rl-hero__tag rl-hero__tag--b">Wheel</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="rl-ribbon">
+      <div class="rl-wrap rl-ribbon__inner">
+        <p><strong>Reelora</strong> is a free-to-play hub for social-style browser games—pick a tile, launch instantly, enjoy animated play with virtual coins.</p>
+        <span class="rl-pill">Free · No paywall</span>
+      </div>
+    </div>
+
+    <section class="rl-sec rl-sec--compact" id="glance" aria-labelledby="glance-h">
+      <div class="rl-wrap">
+        <header class="rl-sec__top rl-sec__top--center">
+          <p class="rl-label">Snapshot</p>
+          <h2 id="glance-h">At a glance</h2>
+          <p class="rl-sec__lead">Same expectations on every device—aligned info before you scroll the lanes.</p>
+        </header>
+        <div class="rl-stats">
+          <article class="rl-stat">
+            <span class="rl-stat__label">Access</span>
+            <span class="rl-stat__value">Instant</span>
+            <p>Open games in your browser—no install required.</p>
+          </article>
+          <article class="rl-stat">
+            <span class="rl-stat__label">Currency</span>
+            <span class="rl-stat__value">Virtual</span>
+            <p>Coins and credits are for in-game fun only.</p>
+          </article>
+          <article class="rl-stat">
+            <span class="rl-stat__label">Update</span>
+            <span class="rl-stat__value">Mar ’26</span>
+            <p>Fresh copy and layout for this release cycle.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="rl-sec" id="lanes" aria-labelledby="lanes-h">
+      <div class="rl-wrap">
+        <header class="rl-sec__top">
+          <p class="rl-label">Lanes</p>
+          <h2 id="lanes-h">Keywords that matter</h2>
+          <p class="rl-sec__lead">Every genre label below opens the library—Slots, Roulette, Blackjack, Poker, Wheel, and more.</p>
+        </header>
+        <div class="rl-arcs">
+          <a class="rl-arc" href="games.html">Slots</a>
+          <a class="rl-arc" href="games.html">Roulette</a>
+          <a class="rl-arc" href="games.html">Blackjack</a>
+          <a class="rl-arc" href="games.html">Poker</a>
+          <a class="rl-arc" href="games.html">Wheel</a>
+          <a class="rl-arc" href="games.html">Arcade</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="rl-sec" id="mosaic" aria-labelledby="mosaic-h">
+      <div class="rl-wrap rl-wrap--lg">
+        <header class="rl-sec__top">
+          <p class="rl-label">Featured</p>
+          <h2 id="mosaic-h">Glass islands on every frame</h2>
+          <p class="rl-sec__lead">Each card uses a floating glass panel over the art—not a basic caption row. Hover for lift, glow, and CTA reveal.</p>
+        </header>
+
+        <div class="rl-mosaic">
+          <a href="games/slot-machine/index.html" class="rl-card">
+            <div class="rl-card__inner">
+              <div class="rl-card__media">
+                <img src="./assets/game_card_slot.webp" alt="" width="800" height="900" loading="lazy" decoding="async">
+                <div class="rl-card__glow" aria-hidden="true"></div>
+              </div>
+              <div class="rl-card__island">
+                <span class="rl-card__tag">Virtual coins</span>
+                <h3 class="rl-card__title">Neon Slots Rush Deluxe</h3>
+                <span class="rl-card__cta">Play Free</span>
+              </div>
+            </div>
+          </a>
+          <a href="games/roulette/index.html" class="rl-card">
+            <div class="rl-card__inner">
+              <div class="rl-card__media">
+                <img src="./assets/roulette.webp" alt="" width="640" height="720" loading="lazy" decoding="async">
+                <div class="rl-card__glow" aria-hidden="true"></div>
+              </div>
+              <div class="rl-card__island">
+                <span class="rl-card__tag">Free play</span>
+                <h3 class="rl-card__title">Mega Roulette Spin X</h3>
+                <span class="rl-card__cta">Play Free</span>
+              </div>
+            </div>
+          </a>
+          <a href="games/hi-lo-lounge/index.html" class="rl-card">
+            <div class="rl-card__inner">
+              <div class="rl-card__media">
+                <img src="./assets/game_back.webp" alt="" width="640" height="720" loading="lazy" decoding="async">
+                <div class="rl-card__glow" aria-hidden="true"></div>
+              </div>
+              <div class="rl-card__island">
+                <span class="rl-card__tag">Virtual coins</span>
+                <h3 class="rl-card__title">Golden Wheel Roulette Max</h3>
+                <span class="rl-card__cta">Play Free</span>
+              </div>
+            </div>
+          </a>
+          <a href="games/blackjack/index.html" class="rl-card">
+            <div class="rl-card__inner">
+              <div class="rl-card__media">
+                <img src="./assets/poker.webp" alt="" width="640" height="720" loading="lazy" decoding="async">
+                <div class="rl-card__glow" aria-hidden="true"></div>
+              </div>
+              <div class="rl-card__island">
+                <span class="rl-card__tag">Free play</span>
+                <h3 class="rl-card__title">Lucky Blackjack Pro</h3>
+                <span class="rl-card__cta">Play Free</span>
+              </div>
+            </div>
+          </a>
+          <a href="games/Texas-Holdem/index.html" class="rl-card">
+            <div class="rl-card__inner">
+              <div class="rl-card__media">
+                <img src="./assets/playing-card.webp" alt="" width="640" height="720" loading="lazy" decoding="async">
+                <div class="rl-card__glow" aria-hidden="true"></div>
+              </div>
+              <div class="rl-card__island">
+                <span class="rl-card__tag">Virtual coins</span>
+                <h3 class="rl-card__title">Royal Poker Wheel Vault</h3>
+                <span class="rl-card__cta">Play Free</span>
+              </div>
+            </div>
+          </a>
+          <a href="games/lucky-flip-lounge/index.html" class="rl-card">
+            <div class="rl-card__inner">
+              <div class="rl-card__media">
+                <img src="./assets/dice.webp" alt="" width="640" height="720" loading="lazy" decoding="async">
+                <div class="rl-card__glow" aria-hidden="true"></div>
+              </div>
+              <div class="rl-card__island">
+                <span class="rl-card__tag">Free play</span>
+                <h3 class="rl-card__title">Royal Slots Vault Prime</h3>
+                <span class="rl-card__cta">Play Free</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <p style="text-align:center;margin-top:2rem;font-size:0.86rem;color:var(--rl-muted)">Virtual coins for in-game fun only. March 2026 refresh.</p>
+      </div>
+    </section>
+
+    <section class="rl-strip" aria-labelledby="why-h">
+      <div class="rl-strip__bg" aria-hidden="true"></div>
+      <div class="rl-wrap" style="position:relative;z-index:2">
+        <header class="rl-sec__top">
+          <p class="rl-label">Studio notes</p>
+          <h2 id="why-h">Why Reelora</h2>
+          <p class="rl-sec__lead">Glass panels, depth, and clarity—without pay-to-play friction.</p>
+        </header>
+        <div class="rl-glass-row">
+          <article class="rl-glass">
+            <h3>100% free to play</h3>
+            <p>Browse and launch from one hub—no purchase required to use this site.</p>
+          </article>
+          <article class="rl-glass">
+            <h3>Virtual coins only</h3>
+            <p>Balances and bonuses exist inside games for entertainment—they stay on the screen.</p>
+          </article>
+          <article class="rl-glass">
+            <h3>Instant &amp; touch-ready</h3>
+            <p>Modern browsers, generous tap targets, smooth scrolling.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="rl-sec" aria-labelledby="step-h">
+      <div class="rl-wrap">
+        <header class="rl-sec__top">
+          <p class="rl-label">Flow</p>
+          <h2 id="step-h">Three beats</h2>
+        </header>
+        <div class="rl-steps">
+          <article class="rl-step">
+            <div class="rl-step__n">01</div>
+            <h3>Choose a game</h3>
+            <p>Skim the mosaic—each island holds a title and a Play Free cue.</p>
+          </article>
+          <article class="rl-step">
+            <div class="rl-step__n">02</div>
+            <h3>Launch in-browser</h3>
+            <p>No install—sessions open fast with virtual coins.</p>
+          </article>
+          <article class="rl-step">
+            <div class="rl-step__n">03</div>
+            <h3>Enjoy the reel</h3>
+            <p>Daily in-game treats and playful milestones—entertainment only.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="rl-trust">
+      <div class="rl-wrap">
+        <div class="rl-trust__box">
+          <h2>Clarity</h2>
+          <ul>
+            <li>Reelora is a free hub for social-style games—virtual coins only.</li>
+            <li>No purchase is required to use this website.</li>
+            <li>In-game items have no value outside the game experience.</li>
+            <li>No off-platform prizes are awarded through this hub.</li>
+            <li>Adults 18+ only. Play for entertainment.</li>
           </ul>
-        </div>
-        <div class="rl-hero__visual">
-          <div class="rl-hero__visual-inner">
-            <img src="./img/feature.webp" alt="" width="640" height="400" loading="eager" decoding="async">
-          </div>
-          <div class="rl-hero__float" aria-hidden="true">Arcade · Puzzle · Action</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="rl-section rl-section--alt" id="featured" aria-labelledby="feat-title">
-      <div class="wrap">
-        <header class="rl-section__head">
-          <p class="rl-section__kicker">Featured</p>
-          <h2 class="rl-section__title" id="feat-title">Hand-picked games to start with</h2>
-          <p class="rl-section__sub">Each title opens in a new tab—tap a card to play. Polished visuals, short sessions, and friendly difficulty curves.</p>
-        </header>
-        <div class="rl-grid">
-          <a class="rl-card" href="games/javascript-tetris-main/index.html" target="_blank" rel="noopener">
-            <div class="rl-card__media"><img src="./img/tetris.webp" alt="" loading="lazy"></div>
-            <div class="rl-card__body">
-              <span class="rl-card__tag rl-card__tag--blue">Puzzle</span>
-              <h3 class="rl-card__title">Neon Stacks</h3>
-              <p class="rl-card__desc">Stack shapes, clear lines, and chase your best run—classic puzzle energy.</p>
-              <div class="rl-card__foot"><span class="rl-card__play">Play →</span></div>
-            </div>
-          </a>
-          <a class="rl-card" href="games/SpaceInvader-master/index.html" target="_blank" rel="noopener">
-            <div class="rl-card__media"><img src="./img/space_invadors.webp" alt="" loading="lazy"></div>
-            <div class="rl-card__body">
-              <span class="rl-card__tag">Action</span>
-              <h3 class="rl-card__title">Star Blitz</h3>
-              <p class="rl-card__desc">Wave-style arcade action—dodge, aim, and keep the rhythm going.</p>
-              <div class="rl-card__foot"><span class="rl-card__play">Play →</span></div>
-            </div>
-          </a>
-          <a class="rl-card" href="games/Breakout_Game-master/index.html" target="_blank" rel="noopener">
-            <div class="rl-card__media"><img src="./img/breakout.webp" alt="" loading="lazy"></div>
-            <div class="rl-card__body">
-              <span class="rl-card__tag">Arcade</span>
-              <h3 class="rl-card__title">Brick Wave</h3>
-              <p class="rl-card__desc">Angle your shots and clear the wall—satisfying breakout-style play.</p>
-              <div class="rl-card__foot"><span class="rl-card__play">Play →</span></div>
-            </div>
-          </a>
-          <a class="rl-card" href="games/Whack-a-Mole-master/index.html" target="_blank" rel="noopener">
-            <div class="rl-card__media"><img src="./img/whack_a_mole.webp" alt="" loading="lazy"></div>
-            <div class="rl-card__body">
-              <span class="rl-card__tag">Quick play</span>
-              <h3 class="rl-card__title">Tap Rush</h3>
-              <p class="rl-card__desc">Fast taps and timing—pure reflex fun in short bursts.</p>
-              <div class="rl-card__foot"><span class="rl-card__play">Play →</span></div>
-            </div>
-          </a>
-          <a class="rl-card" href="games/pong-game-main/index.html" target="_blank" rel="noopener">
-            <div class="rl-card__media"><img src="./img/pong.webp" alt="" loading="lazy"></div>
-            <div class="rl-card__body">
-              <span class="rl-card__tag">Arcade</span>
-              <h3 class="rl-card__title">Rally Pulse</h3>
-              <p class="rl-card__desc">Classic paddle-and-ball flow—easy to learn, fun to master.</p>
-              <div class="rl-card__foot"><span class="rl-card__play">Play →</span></div>
-            </div>
-          </a>
-          <a class="rl-card" href="games/css-sweeper-master/index.html" target="_blank" rel="noopener">
-            <div class="rl-card__media"><img src="./img/miresweeper.webp" alt="" loading="lazy"></div>
-            <div class="rl-card__body">
-              <span class="rl-card__tag">Strategy</span>
-              <h3 class="rl-card__title">Grid Clarity</h3>
-              <p class="rl-card__desc">Read the clues and clear the grid—calm, focused puzzle play.</p>
-              <div class="rl-card__foot"><span class="rl-card__play">Play →</span></div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="rl-section rl-section--mint" id="categories" aria-labelledby="cat-title">
-      <div class="wrap">
-        <header class="rl-section__head">
-          <p class="rl-section__kicker">Explore</p>
-          <h2 class="rl-section__title" id="cat-title">Browse by mood</h2>
-          <p class="rl-section__sub">Explore fun categories and jump into quick challenges that match how you want to play today.</p>
-        </header>
-        <div class="rl-cats">
-          <div class="rl-cat"><span class="rl-cat__icon" aria-hidden="true">⚡</span><p class="rl-cat__name">Arcade</p></div>
-          <div class="rl-cat"><span class="rl-cat__icon" aria-hidden="true">🧩</span><p class="rl-cat__name">Puzzle</p></div>
-          <div class="rl-cat"><span class="rl-cat__icon" aria-hidden="true">🗺️</span><p class="rl-cat__name">Adventure</p></div>
-          <div class="rl-cat"><span class="rl-cat__icon" aria-hidden="true">🎯</span><p class="rl-cat__name">Action</p></div>
-          <div class="rl-cat"><span class="rl-cat__icon" aria-hidden="true">♟️</span><p class="rl-cat__name">Strategy</p></div>
-          <div class="rl-cat"><span class="rl-cat__icon" aria-hidden="true">⏱️</span><p class="rl-cat__name">Quick play</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="rl-section" aria-labelledby="why-title">
-      <div class="wrap">
-        <header class="rl-section__head">
-          <p class="rl-section__kicker">Why Reelora</p>
-          <h2 class="rl-section__title" id="why-title">Built for relaxed, everyday play</h2>
-          <p class="rl-section__sub">A calm, modern hub where discovery feels easy and sessions stay light.</p>
-        </header>
-        <div class="rl-why">
-          <div class="rl-why-card">
-            <div class="rl-why-card__icon" aria-hidden="true">🔍</div>
-            <h3>Easy to explore</h3>
-            <p>Browse featured picks and categories without clutter—find your next game in seconds.</p>
-          </div>
-          <div class="rl-why-card">
-            <div class="rl-why-card__icon" aria-hidden="true">🎮</div>
-            <h3>Fun variety</h3>
-            <p>From puzzles to reflex games, mix up your play and keep things fresh.</p>
-          </div>
-          <div class="rl-why-card">
-            <div class="rl-why-card__icon" aria-hidden="true">⚡</div>
-            <h3>Instant play feel</h3>
-            <p>Open a title and start—no installs, just your browser and a little free time.</p>
-          </div>
-          <div class="rl-why-card">
-            <div class="rl-why-card__icon" aria-hidden="true">✨</div>
-            <h3>Simple &amp; enjoyable</h3>
-            <p>Clean layouts, readable text, and smooth cards designed for comfortable scrolling.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="rl-section rl-section--peach" aria-labelledby="trend-title">
-      <div class="wrap">
-        <header class="rl-section__head">
-          <p class="rl-section__kicker">Popular right now</p>
-          <h2 class="rl-section__title" id="trend-title">Trending on Reelora</h2>
-          <p class="rl-section__sub">Discover popular games players are opening this week—same great library, a fresh spotlight layout.</p>
-        </header>
-        <div class="rl-trend">
-          <a class="rl-trend__item" href="games/javascript-tetris-main/index.html" target="_blank" rel="noopener">
-            <span class="rl-trend__rank">1</span>
-            <div class="rl-trend__thumb"><img src="./img/tetris.webp" alt=""></div>
-            <div class="rl-trend__info"><h3>Neon Stacks</h3><p>Puzzle · Stack &amp; clear</p></div>
-            <span class="rl-trend__cta">Play</span>
-          </a>
-          <a class="rl-trend__item" href="games/SpaceInvader-master/index.html" target="_blank" rel="noopener">
-            <span class="rl-trend__rank">2</span>
-            <div class="rl-trend__thumb"><img src="./img/space_invadors.webp" alt=""></div>
-            <div class="rl-trend__info"><h3>Star Blitz</h3><p>Action · Wave defense</p></div>
-            <span class="rl-trend__cta">Play</span>
-          </a>
-          <a class="rl-trend__item" href="games/Whack-a-Mole-master/index.html" target="_blank" rel="noopener">
-            <span class="rl-trend__rank">3</span>
-            <div class="rl-trend__thumb"><img src="./img/whack_a_mole.webp" alt=""></div>
-            <div class="rl-trend__info"><h3>Tap Rush</h3><p>Reflex · Quick taps</p></div>
-            <span class="rl-trend__cta">Play</span>
-          </a>
-          <a class="rl-trend__item" href="games/Breakout_Game-master/index.html" target="_blank" rel="noopener">
-            <span class="rl-trend__rank">4</span>
-            <div class="rl-trend__thumb"><img src="./img/breakout.webp" alt=""></div>
-            <div class="rl-trend__info"><h3>Brick Wave</h3><p>Arcade · Breakout style</p></div>
-            <span class="rl-trend__cta">Play</span>
-          </a>
-        </div>
-        <p style="text-align:center;margin-top:28px;"><a class="btn btn--secondary btn--lg" href="games.html">See all games</a></p>
-      </div>
-    </section>
-
-    <section class="rl-section rl-section--alt" aria-labelledby="safe-title">
-      <div class="wrap">
-        <div class="rl-safe">
-          <h2 id="safe-title">Play with peace of mind</h2>
-          <p>Reelora is a free online games platform for entertainment purposes only. No purchase is required to enjoy the games we showcase. Have fun, take breaks, and keep play casual.</p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer" aria-label="Footer">
-    <div class="wrap">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h3 class="footer-col__title">Reelora</h3>
-          <p>Free online games in a light, friendly hub. Built for quick sessions and casual fun.</p>
+  <footer class="rl-foot">
+    <div class="rl-wrap">
+      <div class="rl-foot__grid">
+        <div>
+          <div class="rl-foot__name">Reelora</div>
+          <p style="margin:0.4rem 0 0;font-size:0.88rem;color:var(--rl-muted);max-width:22rem">Free social-style games · Virtual coins · March 2026</p>
         </div>
-        <div class="footer-col">
-          <h3 class="footer-col__title">Explore</h3>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="games.html">Games</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3 class="footer-col__title">Information</h3>
-          <ul>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="terms.html">Terms of Use</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-          </ul>
+        <div class="rl-foot__cols">
+          <div>
+            <h4>Site</h4>
+            <a href="games.html">Games</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+          </div>
+          <div>
+            <h4>Legal</h4>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-use.html">Terms &amp; Conditions</a>
+            <a href="responsible-play.html">Responsible Play</a>
+          </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>© <span id="year"></span> Reelora. Reelora is a free-to-play online games platform for entertainment purposes only. No real money is involved.</p>
-      </div>
+      <p class="rl-foot__legal">This site is intended for entertainment purposes only. No purchase is required to use Reelora. Virtual coins and in-game credits are for fun inside linked games.</p>
     </div>
   </footer>
 
-  <div class="age-modal" id="ageModal" role="dialog" aria-modal="true" aria-labelledby="ageModalTitle" aria-describedby="ageModalDesc">
-    <div class="age-modal__backdrop"></div>
-    <div class="age-modal__box">
-      <h2 class="age-modal__title" id="ageModalTitle">Age check</h2>
-      <p class="age-modal__text" id="ageModalDesc">Reelora is intended for adults 18+. Please confirm to continue.</p>
-      <div class="age-modal__actions">
-        <button type="button" class="btn btn--secondary" id="ageExit">Leave</button>
-        <button type="button" class="btn btn--primary" id="ageContinue">I’m 18+</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="cookiebar" id="cookiebar" aria-live="polite">
-    <p>We use cookies for essential features and, where you allow, analytics. See our Privacy Policy.</p>
-    <div class="cookiebar__btns">
-      <button type="button" class="btn btn--secondary" id="cookieReject">Reject</button>
-      <button type="button" class="btn btn--primary" id="cookieAccept">Accept</button>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-  <script>if (document.getElementById("year")) document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="main.js"></script>
 </body>
 </html>
